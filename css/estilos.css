@@ -75,7 +75,7 @@ a{
 .img1{
     height: 700px;
     width: 700px;
-  filter: grayscale(1);
+  
 
 }
 
@@ -125,9 +125,9 @@ display: flex;
 }
 
 .losredon{
-height: 300px;
-width: 300px;
-
+height: 350px;
+width: 350px;
+filter: grayscale(1)
 }
 
 .container-losredon{
@@ -139,8 +139,10 @@ width: 300px;
 
 .losredon:hover{
 transform: translate(150px,150px);
-transform: scale(2,2);
+transform: scale(1,1);
 filter: grayscale(0);
+padding: 20px;
+transform: skewY(25deg);
 }
 
 .div-padding{
