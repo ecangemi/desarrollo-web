@@ -119,10 +119,7 @@ border: 1cm;
     width: 200px;
   }
 
-.pr{
-justify-content: center;
-display: flex;
-}
+
 
 .losredon{
 height: 350px;
@@ -138,13 +135,17 @@ filter: grayscale(1)
 }
 
 .losredon:hover{
-transform: translate(150px,150px);
+
 transform: scale(1,1);
 filter: grayscale(0);
 padding: 20px;
-transform: skewY(25deg);
+
 }
 
 .div-padding{
     padding: 15px;
+}
+.audio1{
+align-items: center;
+display: flex;
 }
