@@ -1,3 +1,8 @@
+footer, nav, h1 {
+  border: solid;
+  background-color: red;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -16,12 +21,6 @@ h1 {
   font-weight: 900;
   font-size: 80px;
   text-align: center;
-  background-color: red;
-  border: solid;
-}
-
-nav {
-  background-color: red;
 }
 
 main {
@@ -29,16 +28,11 @@ main {
   margin: 25px;
 }
 
-footer {
-  border: solid;
-  background-color: red;
-}
-
 li {
   font-style: normal;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
   color: black;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -58,7 +52,8 @@ a {
 .parrafo {
   line-height: 1cm;
   font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-family: "Arial, Helvetica, sans-serif";
   margin: 1cm;
   padding: 1cm;
   border: 1cm;
@@ -114,6 +109,11 @@ a {
 .audio1 {
   align-items: center;
   display: flex;
+}
+
+.oscuro {
+  background-color: grey;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

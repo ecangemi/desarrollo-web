@@ -1,0 +1,5 @@
+@mixin fuentes($style,$size,$family){
+    font-style: $style;
+    font-size: $size;    
+    font-family: $family;
+}

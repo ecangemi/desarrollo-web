@@ -1,3 +1,7 @@
+@import 'base/maps';
+@import 'base/extends';
+@import 'base/mixin';
+
 *{
     margin: 0%;
     padding: 0%;
@@ -19,12 +23,11 @@ h1{
     font-weight: 900;
     font-size: 80px;
     text-align: center;
-    background-color: red;
-    border: solid;
+    @extend %bordeado;
 }
 
 nav{
-    background-color: red;
+    @extend %bordeado;
 }
 
 
@@ -40,18 +43,16 @@ main{
 
 
 footer{
-    border: solid;
-    background-color: red;
+   @extend %bordeado;
 
 }
 
 
 
 li{
-    font-style: normal;
-    font-size: 20px;
+    @include fuentes(normal, 25px,"'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif");
+    
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -76,8 +77,7 @@ a{
 
 .parrafo{
     line-height: 1cm;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
+    @include fuentes(italic, 20px,"Arial, Helvetica, sans-serif");
     margin: 1cm;
     padding: 1cm;
     border: 1cm;
@@ -146,4 +146,9 @@ filter: grayscale(1);
 .audio1{
 align-items: center;
 display: flex;
+}
+
+.oscuro{
+    background-color: map-get($oscuro,bg-oscuro);
+    color:map-get($oscuro , color-oscuro)
 }
